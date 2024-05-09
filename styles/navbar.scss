@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.nav-container {
+    background-color: var(--color-light-grey);
+    padding: 5rem 3rem;
+    width: 25.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    span {
+        font-family: "Aclonica", sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        font-style: normal;
+        color: var(--color-orange);
+        margin-bottom: 2rem;
+    }
+
+    .search_container {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .search_icon {
+            z-index: 1;
+            position: absolute;
+            top: 25%;
+            left: 0.5rem;
+         
+        }
+
+        .search_input {
+            width: 21rem;
+            height: 3.4rem;
+            border-radius: 0.7rem;
+            border: none;
+            outline: none;
+        }
+
+    }
+    
+    .links_container {
+        list-style: none;
+        font-family: "Inter", sans-serif;
+        font-size: 1.6rem;
+        
+
+        .link a:link, .link a:visited {
+            text-decoration:none;
+            line-height: 2.7rem;
+            color: var(--color-black);
+        }
+
+        .clickedLink {
+            color: var(--color-grey);
+            border-left: 1px solid ora;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 2px; /* Width of the line */
+                height: 100%; /* Height of the line */
+                background-color: black; /* Color of the line */
+            }
+        }
+        
+
+    }
+}
