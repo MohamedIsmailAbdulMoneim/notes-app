@@ -63,10 +63,10 @@
             &::before {
                 content: "";
                 position: absolute;
-                top: 0;
-                left: 0;
-                width: 2px; /* Width of the line */
-                height: 50%; /* Height of the line */
+                top: 5px;
+                left: -8px;
+                width: 4px; /* Width of the line */
+                height: 70%; /* Height of the line */
                 background-color: var(--color-orange); /* Color of the line */
             }
         }
